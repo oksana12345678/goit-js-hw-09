@@ -12,8 +12,8 @@ const loadForm = () => {
   const saveData = localStorage.getItem('feedback-form-state');
   if (saveData) {
     const { email, message } = JSON.parse(saveData);
-    form.elements.email.value = formData.email;
-    form.elements.message.value = formData.message;
+    form.elements.email.value = email;
+    form.elements.message.value = message;
   }
 };
 
@@ -23,15 +23,6 @@ window.addEventListener('load', loadForm);
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  if (form.elements.email.value.trim() === '') {
-    alert('Please enter your email');
-    return;
-  }
-
-  if (form.elements.message.value.trim() === '') {
-    alert('Please enter your message');
-    return;
-  }
   localStorage.removeItem('feedback-form-state');
 
   console.log({
