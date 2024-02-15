@@ -7,49 +7,29 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vanilla-app-template/commonHelpers3.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-7527d278.css">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-870f0eb5.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-ef539242.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-5f2ca0bf.css">
   </head>
   <body>
     <main>
       <!-- Loads the specified .html file -->
+      <ul class="gallery"></ul>
 
-      <!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Document</title>
-  </head>
-  <body>
-    <ul class="gallery"></ul>
-  </body>
-</html>
- -->
-
-      <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <form class="feedback-form" autocomplete="off">
-      <label>
-        Email
-        <input type="email" name="email" autofocus />
-      </label>
-      <label>
-        Message
-        <textarea name="message" rows="8"></textarea>
-      </label>
-      <button type="submit">Submit</button>
-    </form>
-  </body>
-</html>
+      <form class="feedback-form" autocomplete="off">
+  <label>
+    Email
+    <input type="email" name="email" autofocus />
+  </label>
+  <label>
+    Message
+    <textarea name="message" rows="8"></textarea>
+  </label>
+  <button type="submit">Submit</button>
+</form>
 
     </main>
+
     
   </body>
 </html>
