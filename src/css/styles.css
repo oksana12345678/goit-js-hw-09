@@ -5,7 +5,7 @@
   |============================
 */
 @import url('./reset.css');
-/* @import url('./galery.css'); */
+@import url('./galery.css');
 @import url('./form.css');
 
 :root {
