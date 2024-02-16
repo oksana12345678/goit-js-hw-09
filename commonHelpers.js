@@ -4,4 +4,4 @@ import{S as p}from"./assets/vendor-870f0eb5.js";(function(){const i=document.cre
         <img class="gallery-image" src="${t.preview}"  alt="${t.description}">
       </a>
     </li>`).join("");l.insertAdjacentHTML("beforeend",d);new p(".gallery a",{captionsData:"alt",captionDelay:250});const a=document.querySelector(".feedback-form"),m=()=>{const t={email:a.elements.email.value.trim(),message:a.elements.message.value.trim()};localStorage.setItem("feedback-form-state",JSON.stringify(t))},g=()=>{const t=localStorage.getItem("feedback-form-state");if(t){const{email:i,message:s}=JSON.parse(t);a.elements.email.value=i,a.elements.message.value=s}};a.addEventListener("input",m);window.addEventListener("load",g);a.addEventListener("submit",t=>{t.preventDefault(),localStorage.removeItem("feedback-form-state"),console.log({email:a.elements.email.value.trim(),message:a.elements.message.value.trim()}),a.reset()});
-//# sourceMappingURL=commonHelpers3.js.map
+//# sourceMappingURL=commonHelpers.js.map
