@@ -5,8 +5,8 @@
   |============================
  */
 @import url('./reset.css');
-@import url('./gallery.css');
-@import url('./form.css');
+/* @import url('./gallery.css'); */
+/* @import url('./form.css'); */
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +22,26 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+ul li {
+  background: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 500 16px / 1.5 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: color 1500ms;
+}
+ul li:hover {
+  background: #6c8cff;
 }
